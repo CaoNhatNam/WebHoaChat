@@ -3,7 +3,6 @@ package controller.shop.customer;
 import model.common.mail.Email;
 import model.common.mail.SendMail;
 import model.shop.CustomerSecurity;
-import properties.SendMailProperties;
 import service.CustomerService;
 
 import javax.servlet.*;
@@ -42,10 +41,10 @@ public class DoRegisterCustomerServlet extends HttpServlet {
                 request.setAttribute("session_cus", session);
                 session.setAttribute("cus", customer_register);
                 String contextPath = request.getContextPath();
-                String domain = SendMailProperties.getDomain();
+    
                 String body = "Để tạo tài khoản và sử dụng các dịch vụ của chúng tôi hãy " +
 //                        "http://localhost:8080"+ contextPath +"/shop/verify-register";
-                        "<a href='"+ domain + contextPath +"/shop/verify-register?key=" + id + "'>nhấn vào đây!</a>";
+                        "<a href='"+ contextPath +"/shop/verify-register?key=" + id + "'>nhấn vào đây!</a>";
                 Email sendEmailForVerify = new Email("nguyenphutai840@gmail.com", "nlrtjmzdmlihnlrz",
                         "Chào mừng bạn trở thành một phần của LAB CHEMICALS", body);
                 SendMail.sendMail(email, sendEmailForVerify);

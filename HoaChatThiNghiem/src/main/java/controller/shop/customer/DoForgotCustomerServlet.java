@@ -3,7 +3,7 @@ package controller.shop.customer;
 import model.common.mail.Email;
 import model.common.mail.SendMail;
 import model.shop.CustomerSecurity;
-import properties.SendMailProperties;
+//import properties.SendMailProperties;
 import service.CustomerService;
 
 import javax.servlet.*;
@@ -44,10 +44,10 @@ public class DoForgotCustomerServlet extends HttpServlet {
             session.setAttribute("cus_forgot", customerSecurity);
 
             String contextPath = request.getContextPath();
-            String domain = SendMailProperties.getDomain();
+       //     String domain = SendMailProperties.getDomain();
             String body = "Để xác thực tài khoản đã quên mật khẩu" +
 //                        "http://localhost:8080"+ contextPath +"/shop/verify-register";
-                    "<a href='"+ domain + contextPath +"/shop/change-pass-forgot?key=" + id + "'> nhấn vào đây!</a>" + "\n" +
+         //           "<a href='"+ domain + contextPath +"/shop/change-pass-forgot?key=" + id + "'> nhấn vào đây!</a>" + "\n" +
                     "<p style='color: red;'>Mật khẩu mới của bạn: "+new_pass+"</p>";
 
             Email sendEmailForForgot = new Email("nguyenphutai840@gmail.com", "nlrtjmzdmlihnlrz",
