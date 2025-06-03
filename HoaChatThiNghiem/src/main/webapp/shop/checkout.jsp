@@ -89,40 +89,31 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-12">
-                                <div class="form-group">
-                                    <label>Tỉnh / Thành<span>*</span></label>
-                                    <div class="select-wrapper">
-                                        <select name="cities" size="10" class="form-select form-select-sm mb-3"
-                                                id="city"
-                                                aria-label=".form-select-sm" style="display:block">
-                                            <option value="" selected>Chọn tỉnh thành</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-12">
-                                <div class="form-group">
-                                    <label>Quận / Huyện<span>*</span></label>
-                                    <div class="select-wrapper">
-                                        <select name="districts" class="form-select form-select-sm mb-3" id="district"
-                                                aria-label=".form-select-sm" style="display: block">
-                                            <option value="" selected>Chọn quận huyện</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-12">
-                                <div class="form-group">
-                                    <label>Phường / Xã<span>*</span></label>
-                                    <div class="select-wrapper">
-                                        <select name="wards" class="form-select form-select-sm" id="ward"
-                                                aria-label=".form-select-sm"
-                                                style="display: block">
-                                            <option value="" selected>Chọn phường xã</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
+							<div class="form-group">
+							    <label>Tỉnh / Thành <span>*</span></label>
+							    <div class="select-wrapper">
+							        <input type="text" name="city" id="city" class="form-control form-control-sm mb-3" placeholder="Nhập tỉnh/thành" />
+							    </div>
+							</div>
+						</div>
+							
+							<div class="col-lg-4 col-12">
+							    <div class="form-group">
+							        <label>Quận / Huyện <span>*</span></label>
+							        <div class="select-wrapper">
+							            <input type="text" name="district" id="district" class="form-control form-control-sm mb-3" placeholder="Nhập quận/huyện" />
+							        </div>
+							    </div>
+							</div>
+							
+							<div class="col-lg-4 col-12">
+							    <div class="form-group">
+							        <label>Phường / Xã <span>*</span></label>
+							        <div class="select-wrapper">
+							            <input type="text" name="ward" id="ward" class="form-control form-control-sm mb-3" placeholder="Nhập phường/xã" />
+							        </div>
+							    </div>
+							</div>
                             <div class="col-lg-12 col-12">
                                 <div class="form-group">
                                     <label>Địa chỉ<span>*</span></label>
